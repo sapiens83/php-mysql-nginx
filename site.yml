@@ -1,0 +1,12 @@
+---
+- name: Biuld and run docker file
+  hosts: localhost
+  become: yes
+  remote_user: abraham
+  tasks:
+
+
+
+     - name: run the service defined in container-php docker-compose.yml
+       docker_service:
+        project_src="{{ playbook_dir }}/container-php/docker"
