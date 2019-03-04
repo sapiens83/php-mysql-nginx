@@ -1,6 +1,6 @@
 <?php
 
-$value = "World Ajua";
+$value = "World Ajuaaa";
 
 $db = new PDO('mysql:host=database;dbname=mydb;charset=utf8mb4', 'myuser', 'secret');
 
