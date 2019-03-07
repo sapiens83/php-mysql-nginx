@@ -5,9 +5,8 @@
   gather_facts: False
   remote_user: deploy
   tasks:
-
-
-
+     - name: ping-to-ec2
+         command: ls
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="{{ playbook_dir }}/container-php/docker"
