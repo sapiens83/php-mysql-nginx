@@ -6,11 +6,11 @@
   remote_user: deploy
   tasks:
      - name: ping-to-ec2
-       command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-     - name: install-python-pip
-       comannd: python get-pip.py
-     - name: install-docker-compose 
-       commabd: pip install docker-compose
+       shell: |
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        install-python-pip
+        python get-pip.py
+        pip install docker-compose
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="{{ playbook_dir }}/container-php/docker"
