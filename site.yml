@@ -7,9 +7,9 @@
   tasks:
      - name: ping-to-ec2
        shell: |
-        sudo pip install docker-compose
-        sudo pip install docker
-        sudo apt-get install docker-compose
+        sudo pip install docker-compose \
+        sudo pip install docker \ 
+        sudo apt-get install docker-compose \
         pip list | grep docker
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
