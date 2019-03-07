@@ -8,7 +8,7 @@
      - name: ping-to-ec2
        command: "{{ item }}"
        with_items:
-        - ls 
+        - pip install docker-compose="1.9.0"
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="{{ playbook_dir }}/container-php/docker"
