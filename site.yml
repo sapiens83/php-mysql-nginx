@@ -7,8 +7,8 @@
   tasks:
      - name: ping-to-ec2
        shell: |
-        pip install docker-compose
-        pip install docker --user
+        sudo pip install docker-compose
+        sudo pip install docker --user
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="{{ playbook_dir }}/container-php/docker"
