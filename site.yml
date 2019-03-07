@@ -1,8 +1,9 @@
 ---
 - name: Biuld and run docker file
-  hosts: localhost
+  hosts: test-hosts
   become: yes
-  remote_user: abraham
+  gather_facts: False
+  remote_user: deploy
   tasks:
 
 
