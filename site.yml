@@ -7,8 +7,8 @@
   tasks:
      - name: ping-to-ec2
        command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-       comannd: python get-pip.py
-       commabd: pip install docker-compose
+     - comannd: python get-pip.py
+     - commabd: pip install docker-compose
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="{{ playbook_dir }}/container-php/docker"
