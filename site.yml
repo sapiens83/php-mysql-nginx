@@ -7,9 +7,6 @@
   tasks:
      - name: ping-to-ec2
        shell: |
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        install-python-pip
-        python get-pip.py
         pip install docker-compose
         pip install docker
      - name: run the service defined in container-php docker-compose.yml
