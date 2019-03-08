@@ -9,6 +9,10 @@
        with_items:
         - pip --version
         - pip list | grep docker
+    - name: copy new php files
+      copy:
+      src: /tmp/php-mysql-nginx/
+      dest: /tmp/php-mysql-nginx/
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="/tmp/php-mysql-nginx/container-php/docker"
