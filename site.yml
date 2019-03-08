@@ -1,7 +1,6 @@
 ---
 - name: Biuld and run docker file
   hosts: test-hosts
-  become: yes
   gather_facts: False
   remote_user: deploy
   tasks:
