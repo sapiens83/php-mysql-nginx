@@ -9,6 +9,7 @@
        with_items:
         - pip --version
         - pip list | grep docker
+        - ls -la /tmp/
      - name: copy new php files
        copy:
         src: /tmp/php-mysql-nginx/
