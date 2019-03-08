@@ -11,4 +11,4 @@
         - pip list | grep docker
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
-        project_src="{{ playbook_dir }}/container-php/docker"
+        project_src="/tmp/php-mysql-nginx/container-php/docker"
