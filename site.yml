@@ -9,7 +9,6 @@
        with_items:
         - pip --version
         - pip list | grep docker
-        - echo ansible_python_interpreter {{ ansible_python_interpreter }}
      - name: run the service defined in container-php docker-compose.yml
        docker_service:
         project_src="{{ playbook_dir }}/container-php/docker"
