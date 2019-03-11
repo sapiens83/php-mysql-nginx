@@ -4,12 +4,6 @@
   gather_facts: False
   remote_user: deploy
   tasks:
-     - name: ping-to-ec2
-       command: "{{ item }}"
-       with_items:
-        - pip --version
-        - pip list | grep docker
-        - ls -la /tmp/
      - name: copy new php files
        copy:
         src: /tmp/php-mysql-nginx/
