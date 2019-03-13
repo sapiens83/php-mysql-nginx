@@ -10,7 +10,7 @@ $databaseTest = ($db->query('SELECT * FROM dockerSample'))->fetchAll(PDO::FETCH_
 
 <html>
     <body>
-        <h1>Hello, <?= $value ?>!</h1>
+        <h1>Database, <?= $value ?>!</h1>
 
         <?php foreach($databaseTest as $row): ?>
             <p>Database , <?= $row->name ?></p>
